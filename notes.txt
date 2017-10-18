@@ -1,0 +1,28 @@
+- ngModel changes every other binding of what it is assigned to
+- imports are done in app.module
+- html changes based on whats in the template
+
+- * prefix before a ng directive indicates that the current element is a template
+- ngFor = "let i of list" | loop
+- classes, const, component, then export class.
+- template, styles
+- (click) = funcName(ele)
+- functions go inside the class component
+- functionName (param: paramType): return type {code}
+- *ngIf | shows the following if a variable is truthy
+
+-@Component.selector inserts component into html
+-@Input gives the component a property via Input
+-declare the input module inside of parent.module declarations. Also import the file here
+
+-Injectable tells TS to emit data, tells Angular to inject other dependencies into it
+-Inject a service into a parent, put it in a constructor inside of the component class
+-constructor(private name: serviceName)
+-put service in the providers in the @Component
+-ngOnInit startComponent lifecycle method
+
+-Routes go in the app.module.ts file
+-[routerLink]="['/something', item.id]"
+-this.router.navigate('/school', this.school.id)
+
+-
