@@ -9,10 +9,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var hero_1 = require("./hero");
+var hero_1 = require("../utils/hero");
 var router_1 = require("@angular/router");
 var common_1 = require("@angular/common");
-var hero_service_1 = require("./hero.service");
+var hero_service_1 = require("../hero-service/hero.service");
 require("rxjs/add/operator/switchMap");
 var HeroDetailComponent = (function () {
     function HeroDetailComponent(heroService, route, location) {
@@ -43,7 +43,7 @@ __decorate([
 HeroDetailComponent = __decorate([
     core_1.Component({
         selector: 'hero-detail',
-        template: "\n\t<div *ngIf=\"hero\">\n\t<h2>{{hero.name}} details!</h2>\n\t<div><label>id: </label>{{hero.id}}</div>\n\t<div>\n\t  <label>name: </label>\n\t  <input [(ngModel)]=\"hero.name\" placeholder=\"name\"/>\n\t</div>\n\t<button (click)=\"goBack()\">Back</button>\n\t</div>\n\t<button (click)=\"save()\">Save</button>\n\t",
+        templateUrl: './hero-detail.component.html',
         styleUrls: ['./hero-detail.component.css']
     }),
     __metadata("design:paramtypes", [hero_service_1.HeroService,

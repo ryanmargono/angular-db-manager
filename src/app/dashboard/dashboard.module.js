@@ -6,18 +6,22 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
-        this.title = 'Tour of Heroes';
+var dashboard_component_1 = require("./dashboard.component");
+var forms_1 = require("@angular/forms");
+var DashboardModule = (function () {
+    function DashboardModule() {
     }
-    return AppComponent;
+    return DashboardModule;
 }());
-AppComponent = __decorate([
-    core_1.Component({
-        selector: 'my-app',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
+DashboardModule = __decorate([
+    core_1.NgModule({
+        imports: [
+            forms_1.FormsModule,
+        ],
+        declarations: [
+            dashboard_component_1.DashboardComponent,
+        ]
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], DashboardModule);
+exports.DashboardModule = DashboardModule;
+//# sourceMappingURL=dashboard.module.js.map
